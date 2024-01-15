@@ -37,3 +37,9 @@ def migrate(cr, version):
     )
     menu_ids = cr.fetchall()
     util.remove_menus(cr, menu_ids)
+
+    cr.execute(
+        """
+          UPDATE ir_asset SET active = FALSE WHERE name LIKE 'web_notify.%'
+        """
+    )
