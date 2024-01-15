@@ -12,14 +12,7 @@
     "development_status": "Production/Stable",
     "website": "https://github.com/OCA/web",
     "depends": ["web", "bus", "base", "mail"],
-    "assets": {
-        "web.assets_backend": [
-            "web_notify/static/src/js/services/*.js",
-            ("remove", "web_notify/static/src/scss/webclient.scss"),
-            ("remove", "web_notify/static/src/js/web_client.js"),
-            ("remove", "web_notify/static/src/js/notification.js"),
-        ]
-    },
+    "assets": {},
     "demo": ["views/res_users_demo.xml"],
     "installable": True,
 }
